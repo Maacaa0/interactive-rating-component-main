@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  
+</head>
+<body>
+  <main>
+    <section class="main-page">
+      <!-- Rating state start -->
+      <img class="star" src="images/icon-star.svg" alt="star">
+
+      <h1>How did we do?</h1>
+
+      <p class="main-paragraph">Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+
+      <div class="buttons">
+        <button class="number-selector n1" onclick="select1()" value="1"> 1 </button>
+        <button class="number-selector n2" onclick="select2()" value="2"> 2 </button>
+        <button class="number-selector n3" onclick="select3()" value="3"> 3 </button>
+        <button class="number-selector n4" onclick="select4()" value="4"> 4 </button>
+        <button class="number-selector n5" onclick="select5()" value="5"> 5 </button>
+      </div>
+
+      <button onclick="submit()" class="submit">Submit</button>
+    </section>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <section class="thankyou-page">  
+      <img onclick="back()" class="thankyou-image" src="images/illustration-thank-you.svg" alt="thankyou">
+      <p class="selected">You selected <span class="replace"></span> out of 5</p>
+
+      <h1> Thank you!</h1>
+
+      <p class="appreciation">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+      
+      <!-- Thank you state end -->
+    </section> 
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --primary: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Overpass', sans-serif;
+    background: var(--VeryDarkBlue)
+}
+
+.main-page {
+    width: 25.8em;
+    height: 26em;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 2.1em;
+    padding: 2em;
+
+}
+
+.star {
+    padding: 1em;
+    background-color: var(--DarkBlue);
+    border-radius: 50%;
+}
+
+h1 {
+    font-size:calc(29/16*1em);
+    letter-spacing: -0.03125em;
+    color: var(--White);
+    margin-top: 1em;
+}
+
+.main-paragraph {
+    color: var(--LightGrey);
+    font-size: 0.9375em;
+    line-height: 1.4375em;
+    margin-top: -0.625em;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 6.7%;
+    margin-top: 1.875em;
+}
+
+.number-selector {
+    width: 3.1em;
+    height: 3.1em;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--LightGrey);
+    background-color: var(--DarkBlue);
+    border: none;
+    cursor: pointer;
+    
+}
+
+.number-selector:hover {
+    color: var(--White);
+    background-color: var(--LightGrey);
+    transition: 300ms ease-in-out;
+}
+
+.number-selector:focus {
+    color: var(--White);
+    background-color: var(--primary);
+}
+
+.submit {
+    display: block;
+    margin: 5% auto;
+    width: 22.7em;
+    height: 3em;
+    margin-top: 2.2em;
+    margin-left: 0.125em;
+
+    border-radius: 2em;
+    background-color: var(--primary);
+    color: var(--White);
+    font-size: 0.9375em;
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    line-height: 2.875em;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.submit:hover {
+    background-color: var(--White);
+    color: var(--primary);
+    transition: 300ms ease-in-out;
+}
+
+
+/*  SECOND PAGE  */
+
+.thankyou-page {
+    width: 25.8em;
+    height: 26em;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 2.1em;
+    padding: 2em;
+
+    display: none;
+}
+
+.thankyou-image {
+    display: block;
+    margin: .9em auto;
+}
+
+.selected {
+    display: table;
+    padding: 0.4375em 1.25em;
+    margin: 2em auto;
+    color: var(--primary);
+    background-color: var(--DarkBlue);
+    border-radius: 1em;
+    font-size: 15px;
+    letter-spacing: 0.00625em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.thankyou-page h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1.4375em;
+    margin-bottom: 0;
+}
+
+.appreciation {
+    margin-top: 0.625em;
+    padding: 0 .2em;
+    text-align: center;
+    color: var(--LightGrey);
+    font-size: 0.9375em;
+    line-height: 1.5375em;
+}
+
+@media (max-width:440px) {
+    .main-page {
+        font-size: 80%;
+        letter-spacing: -0.025em;
+        height: 28.3em;
+        border-radius: 1.2em;
+        padding: 2em;
+    }
+
+    h1 {
+        margin-top: .7em;
+        letter-spacing: 0.01875em;
+    }
+
+    .main-paragraph {
+        font-size: 1.1375em;
+        margin-top: 0px;
+        letter-spacing: -0.2px;
+        line-height: 1.5em;
+        padding: 0em 0em 0.5em 0;
+    }
+
+    .buttons {
+        gap: 7.2%;
+        margin-top: 1.75em;
+        margin-bottom: -0.5em;
+    }
+
+    .submit {
+        width: 23em;
+        margin-top: 1.925em;
+        height: 3.7em;
+        letter-spacing: 0.1875em;
+    }
+
+    .thankyou-page {
+        font-size: 80%;
+        letter-spacing: -0.025em;
+        height: 28.3em;
+        border-radius: 1.2em;
+        padding: 2em;
+    }
+
+    .selected {
+        margin: 0 auto;
+    }
+
+    .thankyou-page h1 {
+        margin-bottom: 0.7em;
+        margin-top: 1.2em;
+    }
+
+    .appreciation {
+        font-size: 1.1375em;
+        margin: 0 auto;
+    }
+}
