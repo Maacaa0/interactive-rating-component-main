@@ -49,7 +49,7 @@ h1 {
 .main-paragraph {
     color: var(--LightGrey);
     font-size: 0.9375em;
-    line-height: 1.4375em;
+    line-height: 1.6375em;
     margin-top: -0.625em;
 }
 
@@ -57,7 +57,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 6.7%;
-    margin-top: 1.875em;
+    margin-top: 1.575em;
 }
 
 .number-selector {
@@ -80,7 +80,7 @@ h1 {
 
 .number-selector:focus {
     color: var(--White);
-    background-color: var(--primary);
+    background: var(--primary);
 }
 
 .submit {
