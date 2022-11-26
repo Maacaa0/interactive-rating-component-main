@@ -83,6 +83,11 @@ h1 {
     background: var(--primary);
 }
 
+.number-selector:active {
+    color: var(--White);
+    background: var(--primary);
+}
+
 .submit {
     display: block;
     margin: 5% auto;
@@ -107,6 +112,10 @@ h1 {
     background-color: var(--White);
     color: var(--primary);
     transition: 300ms ease-in-out;
+}
+
+.submit:disabled {
+    opacity: .2;
 }
 
 
