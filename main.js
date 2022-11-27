@@ -16,7 +16,7 @@ btns.forEach(btn=>btn.addEventListener("click", function(e) {
     e.target.style.color = "white";
 }))
 
-submitButton.addEventListener("click", function() {
+submitButton.addEventListener("click", function(e) {
     if (submitButton.disabled === false) {
 
         targetDiv1.animate([
@@ -26,21 +26,20 @@ submitButton.addEventListener("click", function() {
             
           ], {
             // timing options
-            duration:400,
-            iterations: 1
+            duration:400
           });
         setTimeout(() => {targetDiv1.style.display = "none"},400);
         
         setTimeout(() => {targetDiv2.style.display = "block"},500);
-        targetDiv2.animate([
-            // keyframes
-            { transform: "scale(0)"},
-            { transform: 'scale(1)'}
-          ], {
-            // timing options
-            duration: 700,
-            iterations: 1
-          });
+        setTimeout(() => {targetDiv2.animate([
+          // keyframes
+          { transform: "scale(.2)"},
+          { transform: 'scale(1)'}
+        ], {
+          // timing options
+          duration: 400
+        });},500);
+        
           
     }
 })
